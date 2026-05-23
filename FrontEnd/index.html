@@ -1,38 +1,253 @@
-<DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Hotel</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header class="header">
-            <h2 class="logo">Star Hotel</h2>
-        
-        <nav class="navbar">
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="rooms.html">Rooms</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
-            </ul>
-            
-        </nav>
-        </header>
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Welcome to star hotel</h1>
-                <p>Enjoy luxury rooms, best service, and unforgettable experiences.</p>
-                <a href="booking.html" class="btn">Book Now</a>
-                <a href="rooms.html" class="btn">View Rooms</a>
-            </div>
-            <div class="hero-image">
-                <img src="images/hotel.jpg" alt="star hotel">
-            </div>
-        </section>
-        <script src="script.js"></script>
-    </body>
-</DOCTYPEhtml>
+  <title>Star Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="header">
+    <h2 class="logo">Star Hotel</h2>
+    <div class="menu-toggle">☰</div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Star Hotel</h1>
+      <p>Enjoy luxury rooms, best service, and unforgettable experiences.</p>
+
+      <a href="booking.html" class="btn">Book Now</a>
+      <a href="rooms.html" class="btn btn-secondary">View Rooms</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="../images/hotel.jpg" alt="Star Hotel">
+    </div>
+  </section>
+
+  <!-- BOOKING QUICK FORM -->
+  <section class="booking-bar">
+    <form action="booking.html">
+
+      <div class="form-group">
+        <label for="checkin">Check-in Date</label>
+        <input type="date" id="checkin" required>
+      </div>
+
+      <div class="form-group">
+        <label for="checkout">Check-out Date</label>
+        <input type="date" id="checkout" required>
+      </div>
+
+      <div class="form-group">
+        <label for="adults">Adults</label>
+        <select id="adults">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="children">Children</label>
+        <select id="children">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="rooms">Room Type</label>
+        <select id="rooms">
+          <option>Standard Room</option>
+          <option>Deluxe Room</option>
+          <option>Suite Room</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">Search</button>
+
+    </form>
+  </section>
+  <br>
+  <br>
+  <section class="rooms-preview">
+  <h2 class="section-title">Our Rooms</h2>
+
+  <div class="rooms-container">
+
+    <!-- Standard Room -->
+    <div class="room-card">
+      <img src="../images/download.jpg" alt="Standard Room">
+
+      <h3>Standard Room</h3>
+      <p class="price">Price per night: LKR 20,000</p>
+      <p class="desc">
+        Comfortable and affordable room with all basic facilities for a relaxing stay.
+      </p>
+
+      <div class="room-buttons">
+        <a href="booking.html" class="btn">Book Now</a>
+        <a href="room-details.html" class="btn btn-secondary">View Details</a>
+      </div>
+    </div>
+
+    <!-- Deluxe Room -->
+    <div class="room-card">
+      <img src="../images/download 3.jpg" alt="Deluxe Room">
+
+      <h3>Deluxe Room</h3>
+      <p class="price">Price per night: LKR 35,000</p>
+      <p class="desc">
+        Spacious deluxe room with premium furniture, modern design and better comfort.
+      </p>
+
+      <div class="room-buttons">
+        <a href="booking.html" class="btn">Book Now</a>
+        <a href="room-details.html" class="btn btn-secondary">View Details</a>
+      </div>
+    </div>
+
+    <!-- Suite Room -->
+    <div class="room-card">
+      <img src="../images/download 2.jpg" alt="Suite Room">
+
+      <h3>Suite Room</h3>
+      <p class="price">Price per night: LKR 50,000</p>
+      <p class="desc">
+        Luxury suite room with living space, premium services, and an unforgettable stay.
+      </p>
+
+      <div class="room-buttons">
+        <a href="booking.html" class="btn">Book Now</a>
+        <a href="room-details.html" class="btn btn-secondary">View Details</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="facilities">
+  <h2 class="section-title">Hotel Facilities</h2>
+  <p class="section-subtitle">Enjoy world-class services during your stay</p>
+
+  <div class="facilities-container">
+
+    <div class="facility-card">
+      <h3>Free WiFi</h3>
+      <p>High speed internet access available in all rooms and public areas.</p>
+    </div>
+
+    <div class="facility-card">
+      <h3>Swimming Pool</h3>
+      <p>Relax and enjoy our clean and luxurious outdoor swimming pool.</p>
+    </div>
+
+    <div class="facility-card">
+      <h3>Restaurant</h3>
+      <p>Delicious local and international meals prepared by top chefs.</p>
+    </div>
+
+    <div class="facility-card">
+      <h3>Gym & Fitness</h3>
+      <p>Modern gym equipment available for your daily fitness routine.</p>
+    </div>
+
+    <div class="facility-card">
+      <h3>Free Parking</h3>
+      <p>Secure and spacious parking area for all hotel guests.</p>
+    </div>
+
+    <div class="facility-card">
+      <h3>24/7 Reception</h3>
+      <p>Our customer service team is available anytime for your needs.</p>
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h2>Star Hotel</h2>
+      <p>
+        Star Hotel offers luxury rooms, modern facilities, and the best customer service.
+        Enjoy your stay with comfort and unforgettable memories.
+      </p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p>📍 Colombo, Sri Lanka</p>
+      <p>📞 +94 77 123 4567</p>
+      <p>✉ starhotel@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Star Hotel. All Rights Reserved.</p>
+  </div>
+</footer>
+<section class="testimonials">
+  <h2 class="section-title">What Our Guests Say</h2>
+  <p class="section-subtitle">Real reviews from our happy customers</p>
+
+  <div class="testimonials-container">
+
+    <div class="testimonial-card">
+      <p>
+        "Amazing hotel with clean rooms and friendly staff. The service was excellent!"
+      </p>
+      <h3>- Amal Perera</h3>
+      <span>⭐⭐⭐⭐⭐</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        "The food was delicious and the rooms were very comfortable. Highly recommended!"
+      </p>
+      <h3>- Fathima Rizna</h3>
+      <span>⭐⭐⭐⭐⭐</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        "Best hotel experience. Great location and peaceful environment. Will visit again!"
+      </p>
+      <h3>- Kavindu Silva</h3>
+      <span>⭐⭐⭐⭐</span>
+    </div>
+
+  </div>
+</section>
